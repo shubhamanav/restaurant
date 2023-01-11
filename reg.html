@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="title">Book a table: Select a date and party size</div>
+        <form action="connect.php" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">First Name</span>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name</span>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email (to send your bookings) 
+                    </span>
+                    <input type="text" id="email" name="email" placeholder="abc@xyz.com" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Mobile No</span>
+                    <input type="number" placeholder="+91 9XX XXXX XXX" id="phn" name="phn" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Date</span>
+
+                    <input type="date" id="start" name="start" value="2021-09-08" min="2021-09-7" max="2025-12-31">
+                </div>
+                <!-- <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div> -->
+
+                <div class="input-box">
+                    <span class="details">Comments About Your Gathering</span>
+                    <input type="text" placeholder="write something" id="cm" name="cm" required>
+                </div>
+            </div>
+            <!-- <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-details">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer Not to say</span>
+                    </label>
+                </div>
+            </div> -->
+            <a href="index.html">
+                <div class="button"><input type="submit" value="Reserve Table"></div>
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>
